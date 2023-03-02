@@ -1,3 +1,28 @@
 minikube -- creates 1 node kubernetes server
 same machine works as master and worker
 
+Kubectl commands
+1. Create Namespace - kubectl create ns my-app
+2.kubetcl get ns - To check or list ns
+
+
+------------------YAML FILE-----------------------------------
+apiVersion: v1 # version of k8s API
+kind: Pod # object
+metadata: #object attrs
+  name: pod-name 
+spec: #tech specs of object
+  containers:
+    - name: myc1
+      image: nginx
+    - name: myc2
+      image: alpine
+      
+      
+-----------------------------------------------------------
+Go to K8s Master
+
+1.mkdir /day1
+2. Create yaml file
+3. kubectl create -f name_of_fie
+then kubectl get po ---> to check pod status
